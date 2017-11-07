@@ -1,4 +1,4 @@
-<!-- Tre Loge -->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,6 +15,8 @@
   <title>Indianola University</title>
 </head>
 <body>
+
+
 
 <!-- Navigation Bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -33,17 +35,11 @@
         </div>
 
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home Page</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="directions.html">Directions and Hours</a></li>
-            <li><a href="tuition_and_fees.html">Tutition and Fees</a></li>
-            <li><a href="majors.html">Majors</a></li>
-            <li><a href="sports.html">Sports</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="sign_up.html">Sign Up</a></li>
-            <li><a href="recruit.html">Recruit Me</a></li>
-          </ul>
+
+        <?php
+        include '../resources/navigation.php';
+        ?>
+
         </div>
       </div>
   </nav>
@@ -73,10 +69,9 @@
     <p>Please feel free to explore our website and see all that we have to offer! Thanks for visiting and <em> GO LEAF STORM</em>! </p>
   </article>
 
-  <footer class="col-xs-12">
-    <p>&copy; Indianola University, 2017</p>
-    <p>702 E C St, Indianola, IA 50125</p>
-    <p>Phone: 515-123-4567</p>
-  </footer>
+<?php
+include '../resources/footer.php';
+?>
+
 </body>
 </html>
